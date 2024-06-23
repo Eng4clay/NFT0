@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسابقة TreasureNFT</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #101827;
+            color: #E7E8E9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #DC2626;
+            color: #FCE9E9;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #282F3D;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #FACE61;
+        }
+
+        .question {
+            margin: 15px 0;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #FACE61;
+            color: #101827;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #FBD881;
+        }
+
+        .link {
+            color: #FACE61;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #CFD1D4;
+            background-color: #404652;
+            color: #E7E8E9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بكم في مسابقة TreasureNFT!</h1>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>حول منصة TreasureNFT</h2>
+            <p>
+                TreasureNFT هي منصة للفنون الرقمية وجمع الأصول الرقمية على شبكة بلوكشين. تتيح المنصة للفنانين والمبدعين 
+                إنشاء وبيع أعمالهم الفنية الرقمية على شبكة بلوكشين، مما يمنحهم الفرصة لتحقيق العوائد المالية من خلال مشتريات 
+                المجتمع الإلكتروني. توفر TreasureNFT تقنية التشفير والأمان لضمان أمان وشفافية الصفقات.
+            </p>
+        </section>
+
+        <section id="survey">
+            <h2>استبيان</h2>
+            <form id="surveyForm">
+                <div class="question">
+                    <label>1. هل سمعت عن منصة TreasureNFT من قبل؟</label><br>
+                    <input type="radio" name="question1" value="نعم" required> نعم<br>
+                    <input type="radio" name="question1" value="لا" required> لا<br>
+                </div>
+                
+                <div class="question">
+                    <label>2. هل تفضل المشاركة في منصات NFT؟</label><br>
+                    <input type="radio" name="question2" value="نعم" required> نعم<br>
+                    <input type="radio" name="question2" value="لا" required> لا<br>
+                </div>
+
+                <div class="question">
+                    <label>3. هل لديك خبرة سابقة في مجال NFTs أو التشفير؟</label><br>
+                    <input type="radio" name="question3" value="نعم" required> نعم<br>
+                    <input type="radio" name="question3" value="لا" required> لا<br>
+                </div>
+
+                <div class="question">
+                    <label>4. هل تفضل العمل ضمن فريق صغير لفرصة لاختيارك ضمن الـ 10 الأوائل؟</label><br>
+                    <input type="radio" name="question4" value="نعم" required> نعم<br>
+                    <input type="radio" name="question4" value="لا" required> لا<br>
+                </div>
+
+                <div class="question">
+                    <label>5. هل ترغب في الحصول على تعويض بقيمة 50 دولارًا عند اختيارك للفريق النهائي؟</label><br>
+                    <input type="radio" name="question5" value="نعم" required> نعم<br>
+                    <input type="radio" name="question5" value="لا" required> لا<br>
+                </div>
+
+                <div class="question">
+                    <label>6. هل توافق على الشروط التالية: التزام بالمشاركة الفعالة والإسهام في تعزيز TreasureNFT؟</label><br>
+                    <input type="radio" name="question6" value="نعم" required> نعم<br>
+                    <input type="radio" name="question6" value="لا" required> لا<br>
+                </div>
+
+                <div class="question">
+                    <label>7. هل لديك أي خبرات أو مهارات تعتقد أنها قد تساعدك في تسويق TreasureNFT؟ (اختياري)</label><br>
+                    <textarea name="question7"></textarea><br>
+                </div>
+
+                <button type="submit">إرسال</button>
+            </form>
+            <p>عدد الذين شاركوا في الاستبيان: <span id="participantCount">0</span></p>
+        </section>
+
+        <section id="registration">
+            <h2>التسجيل</h2>
+            <p>اضغط على الرابط لتسجيل 👇</p>
+            <a href="https://treasurenft.xyz/#/uc/register/?inviteCode=UZ61RB" target="_blank">رابط التسجيل</a>
+            <p>بعد الانتهاء من التسجيل سوف تحصل على 300$ لمدة يومين مجانا...</p>
+        </section>
+
+        <section id="marketing-plan">
+            <h2>خطة لتسويق وتكوين الفريق</h2>
+            <h3>1. استراتيجية للوصول إلى المستوى الثاني حتى المستوى 6:</h3>
+            <ul>
+                <li>توسيع الوعي: استخدام وسائل التواصل الاجتماعي (Twitter, Discord, Telegram) لزيادة الوعي حول TreasureNFT.</li>
+                <li>إنشاء محتوى جذاب: إنشاء محتوى متنوع يتضمن مقاطع فيديو توضيحية، صور للأعمال الفنية، ومقابلات مع الفنانين على YouTube ومنصات التواصل الاجتماعي الأخرى.</li>
+                <li>حملات الإعلانات: إطلاق حملات إعلانية مدفوعة على Google Ads ومنصات التواصل الاجتماعي لزيادة الوصول والتفاعل.</li>
+            </ul>
+            <h3>2                <li>جذب الأعضاء الجدد: الاستهداف المباشر للفنانين والمبدعين للانضمام إلى TreasureNFT لعرض أعمالهم.</li>
+                <li>برامج الإحالة: تقديم مكافآت للأعضاء الحاليين الذين يجذبون أصدقاء جدد إلى المنصة.</li>
+                <li>التفاعل المجتمعي: تنظيم حدث عبر الإنترنت (webinar) لشرح كيفية استخدام TreasureNFT وفوائدها.</li>
+            </ul>
+            <h3>3. تكوين الفريق:</h3>
+            <ul>
+                <li>اختيار الأعضاء: بناءً على التزامهم وإسهاماتهم المتوقعة في تعزيز المنصة.</li>
+                <li>المكافأة: تقديم تعويضات مالية للأعضاء المختارين لتشجيعهم على الاستمرار في المشاركة الفعالة والإسهام في نجاح TreasureNFT.</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 TreasureNFT. جميع الحقوق محفوظة.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('surveyForm');
+            const participantCountElement = document.getElementById('participantCount');
+
+            let participantCount = 0;
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                
+                participantCount++;
+                participantCountElement.textContent = participantCount;
+
+                // Reset form after submission
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>
+
